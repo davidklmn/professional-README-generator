@@ -6,14 +6,40 @@ inquirer
   .prompt([
     {
       type: "input",
-      message: "What is name of your project?",
+      message: "Project name: ",
       name: "projectName",
+    },
+    {
+      type: "input",
+      message: "Add a discription: ",
+      name: "discription",
+    },
+    {
+      type: "input",
+      message: "Installation code: ",
+      name: "install",
+    },
+    {
+      type: "input",
+      message: "Usage code: ",
+      name: "usage",
+    },
+    {
+      type: "input",
+      message: "Contribution guidelines: ",
+      name: "contribution",
+    },
+    {
+      type: "input",
+      message: "Test instructions: ",
+      name: "test",
     },
   ])
   .then((response) => {
     const input = `# ${response.projectName}
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
+${response.discription}
 ## Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -23,14 +49,17 @@ inquirer
 * [Questions](#questions)
 ## Installation
 To install necessary dependencies, run the following command:
+${response.install}
 ## Usage
-You can use this applicaiton by running node index.js.
+You can use this applicaiton by running:
+${response.usage}
 ## License
 This project is licensed under the MIT license.
-## Contributing Here Is A Header
-Fork and pull request.
+## Contributing
+${response.contribution}
 ## Tests
 To run tests, run the following command:
+${response.test}
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at dmueller@2u.com. You can find more of my work at [dmueller2u](https://github.com/dmueller2u/).`;
     fs.writeFile("README.md", input, (err) => {
