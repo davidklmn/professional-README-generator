@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/davidklmn/professional-README-generator/issues"
   },
-  "homepage": "https://github.com/davidklmn/professional-README-generator#readme"
+  "homepage": "https://github.com/davidklmn/professional-README-generator#readme",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  }
 }
