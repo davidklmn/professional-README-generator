@@ -1,7 +1,7 @@
-# asd
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# Professional README Generator
+![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
 ## Description
-asd
+Use this app to generate README files for your projects
 ## Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -11,16 +11,16 @@ asd
 * [Questions](#questions)
 ## Installation
 To install necessary dependencies, run the following command:
-asd
+npm install
 ## Usage
 You can use this applicaiton by running:
-asd
+node index.js
 ## License
-This project is licensed under the MIT license.
+This project is licensed under the Mozilla Public License 2.0 license.
 ## Contributing
-asd
+Fork and pull requests.
 ## Tests
 To run tests, run the following command:
-dsa
+npm test
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at asd. You can find more of my work at asd(https://github.com/asd/).
+If you have any questions about the repo, open an issue or contact me directly at davidkelemen88@gmail.com. You can find more of my work at davidklmn(https://github.com/davidklmn/).
